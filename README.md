@@ -1,3 +1,5 @@
+Download zip file or you can checkout branch in Github desktop.
+
 ### `npm i`
 
 To install all packages
