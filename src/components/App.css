@@ -1,0 +1,110 @@
+.display-flex{
+    display: flex;
+}
+
+.justify-content{
+  justify-content: space-between;
+}
+
+.create{
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.edit{
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px auto 20px;
+  margin-right: 10px;
+  color: green;
+}
+
+.delete {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px auto 20px;
+  color: red;
+}
+
+/* Edit Post css */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}
+.form-alignment{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
+}
+.form-inputs{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationItem {
+  background: #fff;
+  border: 2px solid #666;
+  padding: 10px 15px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paginationItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev,
+.next {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  color: blue;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.paginationItem.active {
+  border: 1px solid #888;
+  color: #888;
+  pointer-events: none;
+}
+
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
